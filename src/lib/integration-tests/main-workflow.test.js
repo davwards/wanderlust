@@ -39,4 +39,12 @@ test("Main workflow", () => {
       .locations
       .filter(location => location.id === 83)
   ).toEqual([]);
+
+  actions.favoriteLocation(1);
+  expect(
+    store.getState()
+      .locations
+      .filter(location => location.id === 1)[0]
+      .favorite
+  ).toBeTruthy();
 });

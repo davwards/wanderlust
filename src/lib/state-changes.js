@@ -8,4 +8,9 @@ export default {
     state.locations = state.locations.filter(location => location.id !== message.id);
   },
 
+  FAVORITE_LOCATION: (state, message) => {
+    state.locations
+      .filter(location => location.id === message.id)[0]
+      .favorite = true;
+  },
 }
