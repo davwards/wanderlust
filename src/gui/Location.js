@@ -41,7 +41,7 @@ export default (props) => {
         </button>
       </h2>
 
-      <img src={props.location.image} alt='' />
+      <img src={props.location.image} style={{maxWidth: '100%'}} alt='' />
     </li>
   );
 }
