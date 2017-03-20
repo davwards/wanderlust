@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import LocationList from './LocationList'
 
 class App extends Component {
   constructor(props) {
@@ -22,13 +22,7 @@ class App extends Component {
 
   render = () =>
     <div className="App">
-      <ul>
-        {
-          this.state.storeState.locations.map(location =>
-            <li key={location.id}>{location.title}</li>
-          )
-        }
-      </ul>
+      <LocationList locations={this.state.storeState.locations} />
     </div>;
 }
 
