@@ -1,3 +1,5 @@
+import cloneDeep from 'lodash.clonedeep';
+
 export default (stateChanges) => {
   const subscribers = [];
   let state = {
@@ -6,7 +8,7 @@ export default (stateChanges) => {
 
   return {
     subscribe: (subscriber) => subscribers.push(subscriber),
-    getState: () => state,
+    getState: () => cloneDeep(state),
     update: (message) => {
       if(stateChanges[message.type]) {
         stateChanges[message.type](state, message);
