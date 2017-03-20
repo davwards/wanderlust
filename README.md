@@ -23,4 +23,10 @@ To start the test runner:
 
 5. User can view list of favorited places
 
-6. User can close and reopen window without losing favorites
+6. User can unfavorite a place
+
+7. User sees more details about the location
+
+8. User sees first locations faster on page load
+
+9. User can close and reopen window without losing favorites
