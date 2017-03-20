@@ -12,7 +12,7 @@ export default (props) =>
       props.locations.map(location =>
         <Location
           key={location.id}
-          title={location.title}
+          location={location}
         />
       )
     }
