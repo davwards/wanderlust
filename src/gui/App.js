@@ -22,7 +22,10 @@ class App extends Component {
 
   render = () =>
     <div className="App">
-      <LocationList locations={this.state.storeState.locations} />
+      <LocationList
+        locations={this.state.storeState.locations}
+        actions={this.state.actions}
+      />
     </div>;
 }
 

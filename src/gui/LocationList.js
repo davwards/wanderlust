@@ -13,6 +13,7 @@ export default (props) =>
         <Location
           key={location.id}
           location={location}
+          onDiscard={props.actions.discardLocation}
         />
       )
     }
