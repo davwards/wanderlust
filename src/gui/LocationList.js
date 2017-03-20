@@ -14,6 +14,7 @@ export default (props) =>
           key={location.id}
           location={location}
           onDiscard={props.actions.discardLocation}
+          onFavorite={props.actions.favoriteLocation}
         />
       )
     }
