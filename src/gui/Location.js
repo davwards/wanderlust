@@ -21,7 +21,10 @@ export default (props) => {
     () => props.onDiscard(props.location.id);
 
   const favoriteHandler =
-    () => props.onFavorite(props.location.id);
+    () =>
+      props.location.favorite
+        ? props.onUnfavorite(props.location.id)
+        : props.onFavorite(props.location.id);
 
   return (
     <li style={style}>

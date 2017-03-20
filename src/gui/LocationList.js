@@ -15,6 +15,7 @@ export default (props) =>
           location={location}
           onDiscard={props.actions.discardLocation}
           onFavorite={props.actions.favoriteLocation}
+          onUnfavorite={props.actions.unfavoriteLocation}
         />
       )
     }
