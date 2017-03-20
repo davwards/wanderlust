@@ -47,4 +47,12 @@ test("Main workflow", () => {
       .filter(location => location.id === 1)[0]
       .favorite
   ).toBeTruthy();
+
+  actions.unfavoriteLocation(1);
+  expect(
+    store.getState()
+      .locations
+      .filter(location => location.id === 1)[0]
+      .favorite
+  ).toBeFalsy();
 });

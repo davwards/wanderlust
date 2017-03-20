@@ -5,5 +5,6 @@ export default class Actions {
     this.initializeApp = InitializeApp(store, locationSource);
     this.discardLocation = id => store.update({type: 'DISCARD_LOCATION', id: id});
     this.favoriteLocation = id => store.update({type: 'FAVORITE_LOCATION', id: id});
+    this.unfavoriteLocation = id => store.update({type: 'UNFAVORITE_LOCATION', id: id});
   }
 }

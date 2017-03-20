@@ -13,4 +13,10 @@ export default {
       .filter(location => location.id === message.id)[0]
       .favorite = true;
   },
+
+  UNFAVORITE_LOCATION: (state, message) => {
+    state.locations
+      .filter(location => location.id === message.id)[0]
+      .favorite = false;
+  },
 }
