@@ -18,7 +18,7 @@ it('invokes the discard handler with the location id when the discard button is 
   );
 
   const discardButton = component.findWhere(
-    n => n.type() === 'button' && n.text() === 'X'
+    n => n.type() === 'button' && n.prop('aria-label') === 'discard location'
   );
 
   discardButton.simulate('click');
