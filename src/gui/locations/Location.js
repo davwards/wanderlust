@@ -19,5 +19,6 @@ export default (props) => (
     </h2>
 
     <img src={props.location.image} style={{maxWidth: '100%'}} alt='' />
+    <p>{props.location.location}</p>
   </li>
 );
