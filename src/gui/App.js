@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LocationList from './LocationList'
+import LocationList from './locations/LocationList'
 import ViewSwitch from './ViewSwitch';
 
 const style = {
