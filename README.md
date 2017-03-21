@@ -7,7 +7,7 @@ After cloning the repository, run:
 
 `npm install`
 
-Then, to run the app locally:
+Then, to run the app on `localhost:3000`:
 
 `npm start`
 
