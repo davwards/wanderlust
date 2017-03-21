@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import LocationList from './locations/LocationList'
-import ViewSwitch from './ViewSwitch';
+import ViewSwitch from './controls/ViewSwitch';
 
 const style = {
-  width: '50rem',
   margin: '2em auto 0 auto',
+  width: '500px',
   maxWidth: '100%',
   textAlign: 'center',
 };
