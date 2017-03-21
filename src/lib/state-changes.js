@@ -10,13 +10,13 @@ export default {
 
   FAVORITE_LOCATION: (state, message) => {
     state.locations
-      .filter(location => location.id === message.id)[0]
+      .find(location => location.id === message.id)
       .favorite = true;
   },
 
   UNFAVORITE_LOCATION: (state, message) => {
     state.locations
-      .filter(location => location.id === message.id)[0]
+      .find(location => location.id === message.id)
       .favorite = false;
   },
 }

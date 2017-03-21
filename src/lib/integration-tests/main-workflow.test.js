@@ -44,7 +44,7 @@ test("Main workflow", () => {
   expect(
     store.getState()
       .locations
-      .filter(location => location.id === 1)[0]
+      .find(location => location.id === 1)
       .favorite
   ).toBeTruthy();
 
@@ -52,7 +52,7 @@ test("Main workflow", () => {
   expect(
     store.getState()
       .locations
-      .filter(location => location.id === 1)[0]
+      .find(location => location.id === 1)
       .favorite
   ).toBeFalsy();
 });
