@@ -31,6 +31,8 @@ Or, to start the test runner:
 
 7. User sees more details about the location [Finished in 48acda0]
 
-8. User sees first locations faster on page load (Deprioritized. Never really felt pain from this, would be a pain to do build a whole solution for this that no one could ever really perceive anyway.)
+8. User can view a given location on a map
 
-9. User can close and reopen window without losing favorites
+9. User sees first locations faster on page load (Deprioritized. Never really felt pain from this, would be a pain to do build a whole solution for this that no one could ever really perceive anyway.)
+
+10. User can close and reopen window without losing favorites
