@@ -4,7 +4,7 @@ import ViewSwitch from './ViewSwitch';
 
 const style = {
   width: '50rem',
-  margin: '0 auto',
+  margin: '2em auto 0 auto',
   maxWidth: '100%',
   textAlign: 'center',
 };
@@ -49,6 +49,7 @@ class App extends Component {
 
   render = () =>
     <div className="App" style={style}>
+      <h1>wanderlust</h1>
       <div>
         {this.viewSwitch('all', 'All')}
         {this.viewSwitch('favorites', 'Favorites')}

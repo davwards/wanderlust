@@ -4,6 +4,10 @@ const defaultStyle = {
   background: "none",
   border: "none",
   cursor: "pointer",
+  display: "inline-block",
+  margin: "0",
+  width: "1em",
+  padding: 0,
 };
 
 export default (props) =>
